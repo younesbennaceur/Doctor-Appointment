@@ -19,19 +19,19 @@ export default function Navbar() {
         <ul className=' hidden md:flex font-medium justify-between gap-4'>
             <NavLink to='/' >
             <li  className='py-1'>HOME</li>
-            <hr className=' border-none outline-none h-0.5 w-3/5 m-auto bg-blue-600  hidden'  />
+            <hr className=' border-none outline-none h-0.5 w-3/5 m-auto bg-[var(--primary-color)]  hidden'  />
             </NavLink >
             <NavLink to='/doctors'>
             <li className='py-1'>ALL DOCTORS</li>
-            <hr  className=' border-none outline-none h-0.5 w-3/5 m-auto bg-blue-600 hidden'/>
+            <hr  className=' border-none outline-none h-0.5 w-3/5 m-auto bg-[var(--primary-color)] hidden'/>
             </NavLink>
             <NavLink to='/about' >
             <li className='py-1'>ABOUT</li>
-            <hr  className='  border-none outline-none h-0.5 w-3/5 m-auto bg-blue-600 hidden'/>
+            <hr  className='  border-none outline-none h-0.5 w-3/5 m-auto bg-[var(--primary-color)] hidden'/>
             </NavLink>
             <NavLink to='/contact' >
             <li className='py-1'>CONTACT</li>
-            <hr className=' border-none outline-none h-0.5 w-3/5 m-auto bg-blue-600 hidden' />
+            <hr className=' border-none outline-none h-0.5 w-3/5 m-auto bg-[var(--primary-color)] hidden' />
             </NavLink>
 
         </ul>
@@ -43,17 +43,17 @@ export default function Navbar() {
                     <img src={assets.dropdown_icon} alt="" className=' w-2.5 ' />
                     <div>
                         <div className=' border border-gray-200 absolute top-10 right-0 bg-white shadow-sm rounded-lg p-4 hidden md:block' style={{display: showMenu ? 'block' : 'none'}}>
-                            <p onClick={()=>{goTo('my-profile')}} className='p-1 mb-2 text-black hover:text-blue-700'>My Profile</p>
+                            <p onClick={()=>{goTo('my-profile')}} className='p-1 mb-2 text-black hover:text-[var(--primary-color)]'>My Profile</p>
                         
-                            <p onClick={()=>{goTo('my-appointement')}} className='p-1 w-32 mb-2 text-black hover:text-blue-700'>My Appointement</p>
+                            <p onClick={()=>{goTo('my-appointement')}} className='p-1 w-32 mb-2 text-black hover:text-[var(--primary-color)]'>My Appointement</p>
                         
-                            <p onClick={()=>{setTokon(false)}} className='p-1 text-black hover:text-blue-700'>Log Out</p>
+                            <p onClick={()=>{setTokon(false)}} className='p-1 text-black hover:text-[var(--primary-color)]'>Log Out</p>
                         
 
                         </div>
                     </div>
                 </div>
-                : <button onClick={()=>{goTo("/login")}} className='  bg-blue-600 text-white px-6 py-3 rounded-lg font-normal transition-colors duration-300 hover:bg-blue-500 hidden md:block '>Create Account</button>
+                : <button onClick={()=>{goTo("/login")}} className='  bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-normal transition-colors duration-300 hover:bg-[var(--hover-primary)] hidden md:block '>Create Account</button>
                 
             }
         </div>

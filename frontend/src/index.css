@@ -2,3 +2,10 @@
 .active hr {
   @apply block
 }
+:root {
+  --primary-color: #1779c7;
+  --hover-primary: #0f6ab4;
+}
+::-webkit-scrollbar {
+  @apply hidden
+}
